@@ -34,8 +34,7 @@ public class StudentStreamLab {
         double averageGpa = students.stream()
                 .mapToDouble(Student::getGpa)
                 .average()
-                .orElse(0.0); // Default to 0.0 if no students
-
+                .orElse(0.0);
         System.out.printf("Average GPA: %.2f%n%n", averageGpa);
 
         // TODO Collecting: Collect all "Junior" students into a list
